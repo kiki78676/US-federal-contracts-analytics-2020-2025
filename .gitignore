@@ -1,0 +1,8 @@
+data_raw/
+*.csv
+*.tmp
+.ipynb_checkpoints/
+Files/*.csv
+*.csv
+data_raw/
+.ipynb_checkpoints/
