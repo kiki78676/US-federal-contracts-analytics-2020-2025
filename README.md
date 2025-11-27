@@ -1,7 +1,7 @@
-# 🇺🇸 US Federal Contracts Analytics (2020–2025)
-## A Complete End-to-End Data Engineering + Analytics Project
+## 🇺🇸 US Federal Contracts Analytics (2020–2025)
+# A Complete End-to-End Data Engineering + Analytics Project
 
-This project analyzes U.S. federal contract spending from FY 2020–2025 using SQL, Python, and Power BI to uncover trends, vendor risk, agency spending behavior, market concentration, and geographic distribution.
+This project analyzes U.S. federal contract spending from FY 2020–2025 using SQL, Python, and Power BI to uncover trends, vendor risk, agency spending behavior, and geographic distribution.
 
 Dataset Source (USAspending.gov):  
 🔗 https://www.usaspending.gov/
@@ -25,16 +25,18 @@ The goal is to simulate real federal procurement analytics used in government, c
 
 ## 🧱 Project Architecture
 
-- **Python ETL:** Automated download + load of Prime Transaction CSVs into SQL  
-- **SQL Server Modeling:** Fact cleaning, dimensional modeling, aggregated views  
-- **Business Logic:**  
-  - Year-over-Year (YoY) Growth  
-  - Vendor Market Share + HHI Concentration  
-  - Agency-level spending KPIs  
-  - Award Size Category Classification  
-  - State-Level Spending  
-  - NAICS Category Analysis  
-- **Power BI Dashboards:** Interactive, multi-layer insights for agencies, vendors, industries, and geography
+**Python ETL:** Automated download + load of Prime Transaction CSVs into SQL  
+**SQL Server Modeling:** Fact cleaning, dimensional modeling, aggregated views  
+
+**Business Logic:**  
+- Year-over-Year (YoY) Growth  
+- Vendor Market Share + HHI Concentration  
+- Agency-Level Spending KPIs  
+- Award Size Category Classification  
+- State-Level Spending  
+- NAICS Category Analysis  
+
+**Power BI Dashboards:** Multi-page, interactive, enterprise-style visuals
 
 ---
 
@@ -43,9 +45,10 @@ The goal is to simulate real federal procurement analytics used in government, c
 Includes:
 
 - Automatic CSV ingestion  
+- Schema validation  
 - Data type enforcement  
 - Null value handling  
-- Batch loading to SQL Server  
+- Bulk loading into SQL Server  
 - Reusable ETL pipeline  
 
 Folder: `python/ETL PROCESS.ipynb`
@@ -56,88 +59,83 @@ Folder: `python/ETL PROCESS.ipynb`
 
 Built inside SQL Server:
 
-- Cleaned fact table: `Fact_FederalContracts_Clean`
-- Dimension modeling (recipient, NAICS, PSC, location, agency)
-- Aggregated analytical views
-
-Key SQL assets included:
-
-- Award buckets  
-- Agency YoY growth  
-- Vendor market concentration (HHI)  
-- State spending summaries  
-- NAICS spending rankings  
-
-Folder: `SQL/`
+- Cleaned fact table: `Fact_FederalContracts_Clean`  
+- Multiple dimensions (Agency, Recipient, NAICS, PSC, Location)  
+- Performance-optimized analytical views  
 
 ---
 
 ## 📊 Power BI Dashboards
 
-The project includes **multiple report pages**, showcasing:
-
 ### **1️⃣ Federal Spending Overview**
 - Total obligations by fiscal year  
 - Top spending agencies  
 - Award distribution by category  
-- Total obligations card  
 - Agency award count donut  
 
 ### **2️⃣ Vendor Market Concentration**
-- HHI concentration score  
-- Top 6 vendors  
-- Vendor market share donut  
-- Vendor ranking table  
-- Sub-agency concentration  
+- Vendor HHI concentration score  
+- Top vendors by spending  
+- Market share donut chart  
+- Concentration tables  
 
 ### **3️⃣ YoY Growth Analysis**
-- YoY breakdown table  
-- Trend line of spending  
-- Award size distribution  
-- Obligations by size category  
+- YoY percentage change  
+- Trend line  
+- Size category distribution  
+- Category-level award counts  
 
-### **4️⃣ Geographic & Industry Insights**
-- Federal spending by U.S. state (map)
-- NAICS top categories (bar + treemap)
-- Total sub-agencies, vendor count, state count  
-
-Folder: `powerbi/`
+### **4️⃣ Geographic & NAICS Insights**
+- Map of federal spending by state  
+- Top NAICS categories  
+- Treemap + bar chart  
+- Metrics cards (vendors, sub-agencies, regions)
 
 ---
 
 ## 📁 Repository Structure
-<img width="910" height="312" alt="image" src="https://github.com/user-attachments/assets/e3347e95-9fc7-45d3-a4dd-e3c301ede9cc" />
+
+```
+/SQL
+   Cleaning + Modeling Scripts
+/python
+   ETL PROCESS.ipynb
+/powerbi
+   Federal Contracts Dashboard.pbix
+/Files
+   (Git LFS recommended for large CSVs)
+README.md
+```
 
 ---
 
 ## 🚀 Key Insights Discovered
 
-- Federal spending grew steadily from **2020 to 2025**, surpassing **$50B total**  
-- FAA dominates spending with over **$30B**  
-- Vendor market is **highly competitive** — HHI below 1,000  
-- Award sizes are mostly small: **0–100k range has 80k+ awards**  
-- NAICS "Engineering Services" leads with **over $8B spending**  
-- Texas, Virginia, and California show highest state spending  
+- Total federal obligations exceeded **$50.9B** (2020–2025)  
+- FAA alone spent **$30B+**, dominating all agencies  
+- Market is **highly competitive** (HHI < 1,000)  
+- Most awards fall in **0–100k** category  
+- Engineering Services (NAICS) leads with **$8B+**  
+- TX, VA, and CA show strongest federal spending  
 
 ---
 
 ## 🧑‍💼 Why This Project Matters
 
-This project mirrors REAL analytics work done in:
+This project reflects real analytics used in:
 
-- Federal consulting firms  
-- Data engineering teams  
-- Public sector analytics  
-- Enterprise procurement intelligence  
-- Market concentration & risk assessment  
+- Federal consulting  
+- Enterprise procurement teams  
+- Data engineering groups  
+- Market concentration analysis  
+- Vendor risk modeling  
 
-It demonstrates full-stack capability:
-
-**Python → SQL → BI → Documentation.**
+It demonstrates full-stack capability:  
+**Python → SQL → BI → Documentation**
 
 ---
 
 ## 📬 Contact
 
 Created by **kiki78676**  
-If you’d like help understanding or replicating this project, feel free to connect!
+Feel free to connect or reach out for collaboration!
