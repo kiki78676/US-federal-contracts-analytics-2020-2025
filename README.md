@@ -91,7 +91,8 @@ Built inside SQL Server:
 - Treemap + bar chart  
 - Metrics cards (vendors, sub-agencies, regions)
   
-https://app.powerbi.com/links/ulYq5EaC6D?ctid=70de1992-07c6-480f-a318-a1afcba03983&pbi_source=linkShare
+[https://app.powerbi.com/links/ulYq5EaC6D?ctid=70de1992-07c6-480f-a318-a1afcba03983&pbi_source=linkShare](https://app.powerbi.com/view?r=eyJrIjoiNDA3ZDZhYjAtMmZiMC00OTIyLWJiMmMtNTU5ZmFjNDViMTY2IiwidCI6IjcwZGUxOTkyLTA3YzYtNDgwZi1hMzE4LWExYWZjYmEwMzk4MyIsImMiOjN9)
+
 ---
 
 ## 📁 Repository Structure
@@ -140,3 +141,5 @@ It demonstrates full-stack capability:
 
 Created by **kiki78676**  
 Feel free to connect or reach out for collaboration!
+
+<iframe title="federal spending" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDA3ZDZhYjAtMmZiMC00OTIyLWJiMmMtNTU5ZmFjNDViMTY2IiwidCI6IjcwZGUxOTkyLTA3YzYtNDgwZi1hMzE4LWExYWZjYmEwMzk4MyIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
