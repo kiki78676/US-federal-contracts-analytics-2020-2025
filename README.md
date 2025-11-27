@@ -11,8 +11,13 @@ Dataset Source (USAspending.gov):
 This end-to-end project covers:
 
 Data Extraction & Automation using Python
+
 Data Cleaning & Modeling inside SQL Server
+
 Business Insights & Metrics (YoY growth, vendor concentration, award buckets, etc.)
+
 Visualization & Storytelling in Power BI
+
 GitHub Documentation for portfolio use
+
 The goal is to simulate real federal procurement analytics used in government, consulting, and enterprise data teams.
