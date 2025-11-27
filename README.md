@@ -90,7 +90,8 @@ Built inside SQL Server:
 - Top NAICS categories  
 - Treemap + bar chart  
 - Metrics cards (vendors, sub-agencies, regions)
-
+  
+https://app.powerbi.com/links/ulYq5EaC6D?ctid=70de1992-07c6-480f-a318-a1afcba03983&pbi_source=linkShare
 ---
 
 ## 📁 Repository Structure
