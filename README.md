@@ -106,7 +106,7 @@ Folder: `powerbi/`
 ---
 
 ## 📁 Repository Structure
-
+<img width="910" height="312" alt="image" src="https://github.com/user-attachments/assets/e3347e95-9fc7-45d3-a4dd-e3c301ede9cc" />
 
 ---
 
